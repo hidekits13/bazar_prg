@@ -9935,19 +9935,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\MARGARETH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\bazar_prg_1\\bazar_prg\\bazar_prg.csproj",
+      "projectUniqueName": "D:\\BAZAR PRG- OFICIAL\\bazar_prg\\bazar_prg.csproj",
       "projectName": "bazar_prg",
-      "projectPath": "C:\\Users\\HP\\bazar_prg_1\\bazar_prg\\bazar_prg.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\bazar_prg_1\\bazar_prg\\obj\\",
+      "projectPath": "D:\\BAZAR PRG- OFICIAL\\bazar_prg\\bazar_prg.csproj",
+      "packagesPath": "C:\\Users\\MARGARETH\\.nuget\\packages\\",
+      "outputPath": "D:\\BAZAR PRG- OFICIAL\\bazar_prg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\MARGARETH\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
