@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zzMnvEMWry90RjPhX1+A70mIF42sbzRtciCeMNoRNuBjOjS4dQoPCZ39iHhBd3gCovVzd2/sxNitMwALufVdJA==",
+  "dgSpecHash": "Fg7Yg9wdytw+A51MlSgmWa6SDHlDXKaY+6t2uMqrdIB8AZnAQGff4KFP4gbGrygrVVNsEVeJ9PF7xQVjVZb0aA==",
   "success": true,
-  "projectFilePath": "D:\\PROGRAMACIÓN I - CLASES Y TAREA\\PRG BAZAR\\bazar_prg\\bazar_prg.csproj",
+  "projectFilePath": "D:\\BAZAR PRG- OFICIAL\\bazar_prg\\bazar_prg.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MARGARETH\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MARGARETH\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

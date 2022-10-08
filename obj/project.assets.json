@@ -9940,11 +9940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROGRAMACIÓN I - CLASES Y TAREA\\PRG BAZAR\\bazar_prg\\bazar_prg.csproj",
+      "projectUniqueName": "D:\\BAZAR PRG- OFICIAL\\bazar_prg\\bazar_prg.csproj",
       "projectName": "bazar_prg",
-      "projectPath": "D:\\PROGRAMACIÓN I - CLASES Y TAREA\\PRG BAZAR\\bazar_prg\\bazar_prg.csproj",
+      "projectPath": "D:\\BAZAR PRG- OFICIAL\\bazar_prg\\bazar_prg.csproj",
       "packagesPath": "C:\\Users\\MARGARETH\\.nuget\\packages\\",
-      "outputPath": "D:\\PROGRAMACIÓN I - CLASES Y TAREA\\PRG BAZAR\\bazar_prg\\obj\\",
+      "outputPath": "D:\\BAZAR PRG- OFICIAL\\bazar_prg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MARGARETH\\AppData\\Roaming\\NuGet\\NuGet.Config"
