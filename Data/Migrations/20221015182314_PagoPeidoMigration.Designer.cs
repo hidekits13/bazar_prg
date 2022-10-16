@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using bazar_prg.Data;
@@ -11,9 +12,10 @@ using bazar_prg.Data;
 namespace bazar_prg.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221015182314_PagoPeidoMigration")]
+    partial class PagoPeidoMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,93 +48,6 @@ namespace bazar_prg.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("t_cliente");
-                });
-
-            modelBuilder.Entity("bazar_prg.Models.DetallePedido", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("Cantidad")
-                        .HasColumnType("integer");
-
-                    b.Property<decimal>("Precio")
-                        .HasColumnType("numeric");
-
-                    b.Property<int?>("ProductoId")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("pedidoID")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("ProductoId");
-
-                    b.HasIndex("pedidoID");
-
-                    b.ToTable("t_order_detail");
-                });
-
-            modelBuilder.Entity("bazar_prg.Models.Pago", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<decimal>("MontoTotal")
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("NombreTarjeta")
-                        .HasColumnType("text");
-
-                    b.Property<string>("NumeroTarjeta")
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("PaymentDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("UserID")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("t_pago");
-                });
-
-            modelBuilder.Entity("bazar_prg.Models.Pedido", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("Status")
-                        .HasColumnType("text");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("UserID")
-                        .HasColumnType("text");
-
-                    b.Property<int?>("pagoId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("pagoId");
-
-                    b.ToTable("t_order");
                 });
 
             modelBuilder.Entity("bazar_prg.Models.Productos", b =>
@@ -397,30 +312,6 @@ namespace bazar_prg.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("bazar_prg.Models.DetallePedido", b =>
-                {
-                    b.HasOne("bazar_prg.Models.Productos", "Producto")
-                        .WithMany()
-                        .HasForeignKey("ProductoId");
-
-                    b.HasOne("bazar_prg.Models.Pedido", "pedido")
-                        .WithMany()
-                        .HasForeignKey("pedidoID");
-
-                    b.Navigation("Producto");
-
-                    b.Navigation("pedido");
-                });
-
-            modelBuilder.Entity("bazar_prg.Models.Pedido", b =>
-                {
-                    b.HasOne("bazar_prg.Models.Pago", "pago")
-                        .WithMany()
-                        .HasForeignKey("pagoId");
-
-                    b.Navigation("pago");
                 });
 
             modelBuilder.Entity("bazar_prg.Models.Proforma", b =>

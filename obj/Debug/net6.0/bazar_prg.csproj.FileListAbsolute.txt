@@ -1363,23 +1363,25 @@ D:\BAZAR PRG- OFICIAL\bazar_prg\obj\Debug\net6.0\refint\bazar_prg.dll
 D:\BAZAR PRG- OFICIAL\bazar_prg\obj\Debug\net6.0\bazar_prg.pdb
 D:\BAZAR PRG- OFICIAL\bazar_prg\obj\Debug\net6.0\bazar_prg.genruntimeconfig.cache
 D:\BAZAR PRG- OFICIAL\bazar_prg\obj\Debug\net6.0\ref\bazar_prg.dll
+C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\bazar_prg.exe
+C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\bazar_prg.dll
+C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\app.db
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\appsettings.json
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\bazar_prg.staticwebassets.runtime.json
-C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\bazar_prg.exe
+C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\app.db
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\bazar_prg.deps.json
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\bazar_prg.runtimeconfig.json
-C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\bazar_prg.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\bazar_prg.pdb
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Humanizer.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\MessagePack.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\MessagePack.Annotations.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.Build.Locator.dll
@@ -1400,10 +1402,8 @@ C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.CodeAnalysis.Worksp
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
-C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\HP\bazar_prg_1\bazar_prg\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll

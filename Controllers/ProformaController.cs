@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using bazar_prg.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Dynamic;
+using bazar_prg.Models;
 
 namespace bazar_prg.Controllers
 {
@@ -48,6 +49,66 @@ namespace bazar_prg.Controllers
 
         
             return View(model);
+        }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var proforma = await _context.DataProforma.FindAsync(id);
+            if (proforma == null)
+            {
+                return NotFound();
+            }
+            return View(proforma);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Cantidad,Precio,UserID")] Proforma proforma)
+        {
+            if (id != proforma.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(proforma);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!_context.DataProforma.Any(e => e.Id == id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(proforma);
+        }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var proforma = await _context.DataProforma.FindAsync(id);
+            _context.DataProforma.Remove(proforma);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
