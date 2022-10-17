@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DsTtlUVEd2GUTT17HNLEStM2cpHnAa3B2sEeV31lyRrv+SKBprtSm/9p1lYaMyFjEXBryPyDqPB98piReWQgJw==",
+  "dgSpecHash": "Qy4pogmVHV4LfAwEhfjT8aoOt/oB8k9Lcij3p2KTZdut3DzLu9QLym5wSzHz6u+CLk9Nr+JplJfQYv0lD1vnzA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\USUARIO\\Documents\\GitHub\\bazar_prg\\bazar_prg.csproj",
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\GitHub\\bazar_prg\\bazar_prg.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
