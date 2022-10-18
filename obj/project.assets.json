@@ -10389,25 +10389,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\MARGARETH\\.nuget\\packages\\": {}
-=======
     "C:\\Users\\Administrador\\.nuget\\packages\\": {}
->>>>>>> home
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\s12_bazar_prg\\bazar_prg\\bazar_prg.csproj",
-      "projectName": "bazar_prg",
-      "projectPath": "D:\\s12_bazar_prg\\bazar_prg\\bazar_prg.csproj",
-      "packagesPath": "C:\\Users\\MARGARETH\\.nuget\\packages\\",
-      "outputPath": "D:\\s12_bazar_prg\\bazar_prg\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\MARGARETH\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
       "projectUniqueName": "D:\\PRG\\bazar_prg\\bazar_prg.csproj",
       "projectName": "bazar_prg",
       "projectPath": "D:\\PRG\\bazar_prg\\bazar_prg.csproj",
@@ -10416,7 +10402,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> home
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -10491,5 +10476,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché D:\\PRG\\bazar_prg\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
