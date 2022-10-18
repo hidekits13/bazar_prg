@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\s12_bazar_prg\\bazar_prg\\bazar_prg.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MARGARETH\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "D:\\PRG\\bazar_prg\\bazar_prg.csproj": {}
+  },
+  "projects": {
+    "D:\\PRG\\bazar_prg\\bazar_prg.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PRG\\bazar_prg\\bazar_prg.csproj",
+        "projectName": "bazar_prg",
+        "projectPath": "D:\\PRG\\bazar_prg\\bazar_prg.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "D:\\PRG\\bazar_prg\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> home
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -73,7 +90,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -85,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
