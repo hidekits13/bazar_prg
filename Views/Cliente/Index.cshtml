@@ -1,83 +1,89 @@
 @model bazar_prg.Models.Cliente
 
+
 <link rel="stylesheet" href="css/contactanos.css">
 
-<div class="container">
-		
-		<div class="form">
-			<div class="contact-info">
 
-				<div class="">
-					<a asp-controller="Home" asp-action="Index">
-						<img src="https://cdn-icons-png.flaticon.com/512/7756/7756204.png" class="icon" alt="" />
-					</a>
+<div class="contenedor">
+	<span class="big-circle"></span>
+	<img src="img/shape.png" class="square" alt="" />
+	<div class="form">
+		<div class="contact-info">
+
+			<div class="">
+				<a asp-controller="Home" asp-action="Index">
+					<img src="https://cdn-icons-png.flaticon.com/512/7756/7756204.png" class="icon" alt="" />
+				</a>
+			</div>
+
+			<h3 class="title">Escribenos</h3>
+			<p class="text">
+				Déjanos tus datos para brindarte más información acerca de nuestro Bazar Pedro Ruiz Gallo.
+			</p>
+
+			<div class="info">
+				<div class="information">
+					<img src="https://cdn-icons-png.flaticon.com/512/3133/3133860.png" class="icon" alt="" />
+					<p>Av. Cdra 2 S/N Costado de la Clinica Maison de Sante Chorrillos, Chorrillos</p>
 				</div>
-
-				<h3 class="title">Escribenos</h3>
-				<p class="text">
-					Dejanos tus datos o puedes seguirnos en nuestras redes sociales para brindarte más información.
-				</p>
-
-				<div class="info">
-					<div class="information">
-						<img src="https://cdn-icons-png.flaticon.com/512/3133/3133860.png" class="icon" alt="" />
-						<p>Av. Petit Thouars 4836, Miraflores 15046</p>
-					</div>
-					<div class="information">
-						<img src="https://cdn-icons-png.flaticon.com/512/3972/3972722.png" class="icon" alt="" />
-						<p>polident@gmail.com</p>
-					</div>
-					<div class="information">
-						<img src="https://cdn-icons-png.flaticon.com/512/3679/3679281.png" class="icon" alt="" />
-						<p>995958855</p>
-					</div>
+				<div class="information">
+					<img src="https://cdn-icons-png.flaticon.com/512/3972/3972722.png" class="icon" alt="" />
+					<p>bazar_prg@gmail.com</p>
 				</div>
-
-				<div class="social-media">
-					<p>Siguenos :</p>
-					<div class="social-icons">
-						<a href="https://www.facebook.com/Polident.pe">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="https://www.instagram.com/_polident_/">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</div>
+				<div class="information">
+					<img src="https://cdn-icons-png.flaticon.com/512/3679/3679281.png" class="icon" alt="" />
+					<p>920193222</p>
 				</div>
 			</div>
 
-			<div class="contact-form">
-				<span class="circle one"></span>
-				<span class="circle two"></span>
-
-				<div class="activity-data">
-				    <form asp-controller="Cliente" asp-action="Create">
-
-        <label asp-for="Name" class="form-label"></label>
-         <br>
-        <input asp-for="Name" class="form-control form-control-sm" type="text" placeholder="Ingresu sus nombres" aria-label=".form-control-sm" />
-          <br>
-        <label asp-for="Surname" class="control-label"></label>
-           <br>
-        <input asp-for="Surname" class="form-control form-control-sm" type="text" placeholder="Ingrese sus apellidos" aria-label=".form-control-sm" />
-          <br>
-        <label asp-for="Email" class="control-label"></label>
-           <br>
-        <input asp-for="Email" class="form-control form-control-sm" type="text" placeholder="Ingrese su email" aria-label=".form-control-sm" />
-          <br>
-   
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Enviar</button> 
-        </div>              
-    </form>
-
+			<div class="social-media">
+				<p>Siguenos :</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/IEPRG/">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="https://www.instagram.com/prgoficial/">
+						<i class="fab fa-instagram"></i>
+					</a>
 				</div>
-                <h1>@ViewData["Message"]</h1>
-                <div>
-                     <br>
-        <a asp-controller="Home" asp-action="Index">Back to List</a>
-    </div>
+			</div>
+		</div>
 
+		<div class="contact-form">
+			<span class="circle one"></span>
+			<span class="circle two"></span>
+
+			<div class="activity-data">
+				<form asp-controller="Cliente" asp-action="Create">
+					
+					<h3 class="title">Contáctanos</h3>
+                     <br>
+					<div class="input-container">
+						<input asp-for="Name" type="text" class="input" placeholder="Ingrese sus nombres" />
+					</div>
+					 <br>
+					<div class="input-container">
+						<input asp-for="Surname" type="text" class="input" placeholder="Ingrese sus apellidos" />
+					</div>
+					 <br>
+					<div class="input-container">
+						<input asp-for="Email" type="text" class="input" placeholder="Ingrese su email" />
+					</div>
+					 <br>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</div>
+				</form>
+
+			</div>
+			<h1>@ViewData["Message"]</h1>
+			<br>
+			<a class="text-white" style="margin-left: 30px;" asp-controller="Home" asp-action="Index">Regresar</a>
+			<div>
+				
+				
 			</div>
 
 		</div>
+
+	</div>
