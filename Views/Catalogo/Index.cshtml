@@ -1,36 +1,66 @@
 @model IEnumerable<bazar_prg.Models.Productos>
 
 @{
-    ViewData["Title"] = "Catalogo";  
+    ViewData["Title"] = "Te presentamos nuestro catálogo actualizado";  
 }
+     <link rel="stylesheet" href="~/css/catalogo.css" asp-append-version="true" />
+     <link rel="stylesheet" href="~/js/catalogo.js" asp-append-version="true" />
 
 <h1>@ViewData["Title"]</h1>
+<p class="animate-text">
+  <span>Dein Business</span>
+  <span>Deine Bar</span>
+  <span>Dein Restaurant</span>
+  <span>Deinen Beauty Salon</span>
+  <span>Deinen Blumenladen</span>
+</p>
+
+
   <div class="container">
+
     <h1>@ViewData["Message"]</h1>
+        <br>
     <div class="row">
+
       <div class="col">
+
         <div id="products" class="mb-3">
-          <div class="row">
-            @foreach (var item in Model) {
+        <center> <div class="row">
+            @foreach (var item in Model) { //tantos items tenga se organizará
             <div class="col-sm-4">
-              <div class="card mb-3">
+
+              <div class="card" >
+
                 <div class="card-body">
                   <div class="card-img-actions">
-                    <img class="img-responsive" width="96" height="150"
+                    <img class="img-responsive" width="120" height="150"
                        src="/images/@item.ImageName" alt="@item.ImageName"  />
                   </div>
+
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
-                  <p class="card-text">@Html.DisplayFor(modelItem => item.Precio)</p>
-                  <a class="btn btn-primary" asp-action="Add" asp-route-id="@item.Id">Add</a>
-                  <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">View</a>
+
+
+                <div >
+                  <h5 style="color:rgb(0,0,0);" >@Html.DisplayFor(modelItem => item.Name)</h5>
+                  <p style="color:rgb(0,0,0);">@Html.DisplayFor(modelItem => item.Precio)</p>
+                  <a class="w-10 btn btn-lg btn-primary" asp-action="Add" asp-route-id="@item.Id">Agregar</a>
+                  <a class="w-10 btn btn-lg btn-primary" asp-action="Details" asp-route-id="@item.Id">Ver</a>
+                  
                 </div>
+                <br>
               </div>
+<br>
             </div>
+            <br>
             }
+
          </div>
+                <br>
+
         </div>
+
       </div>
+
     </div>
-  </div>
+
+  </div> 
