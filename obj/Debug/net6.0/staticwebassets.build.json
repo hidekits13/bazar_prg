@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "anUHag2EVTXkuaowJEtgIENPVYGvjUvq34718sKYfbA=",
+  "Hash": "QI2wwg/1d77lO7h51OVwAeIXcx40CIyYW2DivIVv+wE=",
   "Source": "bazar_prg",
   "BasePath": "_content/bazar_prg",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\css\\Contactanos.css"
     },
     {
+      "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\css\\detalleprod.css",
+      "SourceId": "bazar_prg",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\",
+      "BasePath": "_content/bazar_prg",
+      "RelativePath": "css/detalleprod.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\detalleprod.css"
+    },
+    {
       "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\css\\login.css",
       "SourceId": "bazar_prg",
       "SourceType": "Discovered",
@@ -1496,6 +1513,23 @@
       "OriginalItemSpec": "wwwroot\\images\\banner01.jpg"
     },
     {
+      "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\images\\borrador.jpg",
+      "SourceId": "bazar_prg",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\",
+      "BasePath": "_content/bazar_prg",
+      "RelativePath": "images/borrador.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\borrador.jpg"
+    },
+    {
       "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\images\\cartuchera.jpg",
       "SourceId": "bazar_prg",
       "SourceType": "Discovered",
@@ -1511,6 +1545,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\cartuchera.jpg"
+    },
+    {
+      "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\images\\colores.jpg",
+      "SourceId": "bazar_prg",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\",
+      "BasePath": "_content/bazar_prg",
+      "RelativePath": "images/colores.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\colores.jpg"
     },
     {
       "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\images\\cuaderno.jpg",
@@ -1596,6 +1647,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\mochila.jpg"
+    },
+    {
+      "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\images\\reglas.jpg",
+      "SourceId": "bazar_prg",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\",
+      "BasePath": "_content/bazar_prg",
+      "RelativePath": "images/reglas.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\reglas.jpg"
+    },
+    {
+      "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\images\\resaltadores.jpg",
+      "SourceId": "bazar_prg",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\",
+      "BasePath": "_content/bazar_prg",
+      "RelativePath": "images/resaltadores.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\resaltadores.jpg"
     },
     {
       "Identity": "D:\\BAZAR-S12-PRG\\bazar_prg\\wwwroot\\images\\sharpie.jpg",

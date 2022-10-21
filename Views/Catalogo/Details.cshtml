@@ -4,22 +4,50 @@
     ViewData["Title"] = "Detalles del Producto";
 }
 
-    <h1>Details</h1>
-    <div class="container">
-            <div class="col-sm-4">
-              <div class="card mb-3">
-                <div class="card-body">
-                  <div class="card-img-actions">
-                    <img class="img-responsive" width="96" height="150"
+     <link rel="stylesheet" href="/css/detalleprod.css" asp-append-version="true" />
+     
+
+
+<html lang="en">
+
+<head>
+  <title>Harvest vase</title>
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+  <div class="wrapper">
+    <div class="product-img">
+      
+      <img class="img-responsive" height="420" width="327"
                        src="/images/@Html.DisplayFor(model => model.ImageName)" alt="@Html.DisplayFor(model => model.ImageName)"  />
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">@Html.DisplayFor(model => model.Name)</h5>
-                  <p class="card-text">@Html.DisplayFor(model => model.Descripcion)</p>
-                  <h5 class="card-title">@Html.DisplayFor(model => model.Precio)</h5>
-                  <a class="btn btn-primary" asp-action="Add" asp-route-id="@Model.Id">Add</a>
-                </div>
-              </div>
-            </div>
+
     </div>
+    <div class="product-info">
+      <div class="product-text">
+        <br>
+        
+        <h1>@Html.DisplayFor(model => model.Name)</h1>
+
+         <h2>@Html.DisplayFor(model => model.Marca)</h2>
+        
+        <h2>@Html.DisplayFor(model => model.Descripcion)</h2>
+        
+         <p><span>S/. <span>@Html.DisplayFor(model => model.Precio)</span></p>
+        <br>
+         
+      </div>
+      
+      <div class="product-price-btn">
+               
+       
+        <a class="" style="color:rgb(0,0,0);" asp-action="Add" asp-route-id="@Model.Id">Agregar al carrito</a>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
