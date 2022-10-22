@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1arRbsSIfsnhY2teyE+EewStRyLXaxhiu4/c9K69M2I=",
+  "Hash": "ia2/HBWQ3Kb2X5eBiVlQ1x8wzVvJPEFH+yhwhO0KspY=",
   "Source": "bazar_prg",
   "BasePath": "_content/bazar_prg",
   "Mode": "Default",
@@ -1156,6 +1156,23 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
+      "Identity": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\css\\pago.css",
+      "SourceId": "bazar_prg",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\",
+      "BasePath": "_content/bazar_prg",
+      "RelativePath": "css/pago.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\pago.css"
+    },
+    {
       "Identity": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\css\\proforma.css",
       "SourceId": "bazar_prg",
       "SourceType": "Discovered",
@@ -1666,6 +1683,23 @@
       "OriginalItemSpec": "wwwroot\\images\\marcador.jpg"
     },
     {
+      "Identity": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\images\\mastercard.png",
+      "SourceId": "bazar_prg",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\",
+      "BasePath": "_content/bazar_prg",
+      "RelativePath": "images/mastercard.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mastercard.png"
+    },
+    {
       "Identity": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\images\\mochila.jpg",
       "SourceId": "bazar_prg",
       "SourceType": "Discovered",
@@ -1732,6 +1766,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\sharpie.jpg"
+    },
+    {
+      "Identity": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\images\\visa.png",
+      "SourceId": "bazar_prg",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\",
+      "BasePath": "_content/bazar_prg",
+      "RelativePath": "images/visa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\visa.png"
     },
     {
       "Identity": "E:\\PRG_BAZAR\\BAZAR_PRG\\wwwroot\\js\\catalogo.js",
