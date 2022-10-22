@@ -77,7 +77,7 @@ public class PagoController : Controller{
 
             _context.SaveChanges();
 
-            ViewData["Message"] = "El pago se ha registrado";
+            ViewData["Message"] = "El pago se ha registrado correctamente";
             return View("Create");
         }
 
