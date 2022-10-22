@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     
+        <link rel="stylesheet" href="~/css/botones.css" asp-append-version="true" />
+
     <link rel="stylesheet" href="~/bazar_prg.styles.css" asp-append-version="true" />
       
         <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
@@ -33,19 +35,19 @@
                             <a style="padding-top: 34px;" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a style="padding-top: 34px;" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a style="padding-top: 34px;" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a style="padding-top: 35px;" class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="Index">Contactanos</a>
+                            <a style="padding-top: 35px;" class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="Index">Contáctanos</a>
                         </li>
                         <li class="nav-item">
-                            <a style="padding-top: 35px;" class="nav-link text-dark" asp-area="" asp-controller="Catalogo" asp-action="Index">Catalogo</a>
+                            <a style="padding-top: 35px;" class="nav-link text-dark" asp-area="" asp-controller="Catalogo" asp-action="Index">Catálogo</a>
                         </li>
                         <li class="nav-item">
                             <form asp-controller="Catalogo" asp-action="Index" style="display: flex;"> 
                                 <input style="font-size: 12px;" type="text" name="searchString"  class="form-control">
                                 
-                                <input type="submit" value="Buscar" class="btn ml-5" style="background:  #54b4d7 !important; : #000000;">
+                                <input type="submit" value="Buscar" class="btn ml-5" style="color:rgb(0,0,0);" style="background:  #54b4d7 !important; : #000000;">
                             </form>
                         </li>
                     </ul>

@@ -3,64 +3,100 @@
     ViewData["Title"] = "Pago";
 }
 <link rel="stylesheet" href="~/css/proforma.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/css/pago.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/pagoofc.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/botones.css" asp-append-version="true" />
 
-<h1>@ViewData["Title"]</h1>
 
     <div class="container">
 
-        <div class="row">
-          <div class="col-sm-10 mt-5">
-           <form asp-controller="Pago" asp-action="Pagar">
-              <div class="form-group row">
-                <input type="hidden" asp-for="UserID"/>
-                <div class="col-sm-2">
-                  <label asp-for="NombreTarjeta" class="control-label"></label>
-                </div>
-                <div class="col-sm-2">
-                  <input asp-for="NombreTarjeta" class="form-control" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-2">
-                  <label asp-for="NumeroTarjeta" class="control-label"></label>
-                </div>
-                <div class="col-sm-2">
-                  <input asp-for="NumeroTarjeta" class="form-control" data-inputmask="'mask': '9999-9999-9999-9999'" />
-                </div>
-              </div>              
-              <div class="form-group row">
-                <div class="col-sm-2">
-                  <label asp-for="DueDateYYMM" class="control-label"></label>
-                </div>
-                <div class="col-sm-2">
-                  <input asp-for="DueDateYYMM" class="form-control" data-inputmask="'mask': '99/99', 'placeholder': 'yy/mm'" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-2">
-                  <label asp-for="Cvv" class="control-label"></label>
-                </div>
-                <div class="col-sm-2">
-                  <input asp-for="Cvv" class="form-control" data-inputmask="'mask': '999', 'placeholder': '999'" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-2">
-                  <label asp-for="MontoTotal" class="control-label"></label>
-                </div>
-                <div class="col-sm-2">
+        <div class="contenedor">
+	<span class="big-circle"></span>
+	<img src="img/shape.png" class="square" alt="" />
+	<div class="form">
+		<div class="contact-info">
+
+			<div class="">
+				<a asp-controller="Home" asp-action="Index">
+					<img src="https://cdn-icons-png.flaticon.com/512/7756/7756204.png" class="icon" alt="" />
+				</a>
+			</div>
+
+			<h3 class="title">Escribenos</h3>
+			<p class="text">
+				Te brindamos la opción de realizar tu pago con la total seguridad en nuestra app bazar Pedro Ruiz Gallo.
+			</p>
+
+			<div class="info">
+				<div class="information">
+					<img src="https://cdn-icons-png.flaticon.com/512/3133/3133860.png" class="icon" alt="" />
+					<p>Av. Cdra 2 S/N Costado de la Clinica Maison de Sante Chorrillos, Chorrillos</p>
+				</div>
+				<div class="information">
+					<img src="https://cdn-icons-png.flaticon.com/512/3972/3972722.png" class="icon" alt="" />
+					<p>bazar_prg@gmail.com</p>
+				</div>
+				<div class="information">
+					<img src="https://cdn-icons-png.flaticon.com/512/3679/3679281.png" class="icon" alt="" />
+					<p>920193222</p>
+				</div>
+			</div>
+
+			<div class="social-media">
+				<p>Siguenos :</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/IEPRG/">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="https://www.instagram.com/prgoficial/">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<span class="circle one"></span>
+			<span class="circle two"></span>
+
+			<div class="activity-data">
+				<form asp-controller="Pago" asp-action="Pagar">
+					<input type="hidden" asp-for="UserID"/>
+					<h3 class="title">REGISTRA TU PAGO</h3>
+                     <br>
+					<div class="input-container">
+             <input asp-for="NombreTarjeta" class="form-control" placeholder="Ingrese el nombre de la tarjeta" />					
+             </div>
+					 <br>
+					<div class="input-container">
+                  <input asp-for="NumeroTarjeta" class="form-control" placeholder="Ingrese el número de la tarjeta"  data-inputmask="'mask': '9999-9999-9999-9999'" />					</div>
+					 <br>
+					<div class="input-container">
+                 <input asp-for="DueDateYYMM" class="form-control" data-inputmask="'mask': '99/99', 'placeholder': 'yy/mm'" placeholder="Ingrese la fecha de la tarjeta" />				
+                 	</div>
+					 <br>
+
+          <div class="input-container">
                   <input asp-for="MontoTotal" class="form-control" data-thousands="," data-decimal="." />
-                </div>
-              </div>  
-              <div class="form-group row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-2">
-                  <button type="submit" class="btn btn-primary">Pagar</button> 
-                </div>
-              </div>
-            </form>
-            <h1>@ViewData["Message"]</h1>
-          </div>
-        </div>
-    </div
+                    	</div>
+					 <br>
+
+
+					<div class="form-group">
+					<center><button type="submit" class="btn btn-primary">Realizar Pago</button>
+					</div>
+				</form>
+
+			</div>
+			<center><h5 style="color:rgb(0,0,0);">@ViewData["Message"]</h5>
+			<br>
+			<a class="text-white" style="margin-left: 30px;" asp-controller="Home" asp-action="Index">Regresar a inicio</a>
+			<div>
+				
+				
+			</div>
+
+		</div>
+
+	</div>
+
+    </div>

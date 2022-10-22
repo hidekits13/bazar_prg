@@ -33,6 +33,7 @@ namespace bazar_prg.Controllers
         {
             _context.Add(objCliente);
             _context.SaveChanges();
+             ViewData["Message"] = "Muchas gracias, nos contactaremos contigo pronto";
             return View("Index");
         }
 

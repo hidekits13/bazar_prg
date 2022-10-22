@@ -130,5 +130,20 @@ body {
   }
   
   
-
+  @media screen and (max-width: 600px) {
+    .contenedor-producto{
+      width: 100%;
+    }
+    .product-img{
+      width: 100%;
+    }
+ 
+    .product-info{
+      width: 100%;
+    }
+    .product-precio{
+     
+    }
+ 
+  }
   
