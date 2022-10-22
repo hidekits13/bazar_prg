@@ -1,19 +1,26 @@
 @model dynamic;
 @using System.Collections.Generic;
+<link rel="stylesheet" href="~/css/proforma.css" asp-append-version="true" />
 
+<link rel="stylesheet" href="~/css/burbuja.css" asp-append-version="true" />
+
+<div style="text-align:center;">
 @{
-    ViewData["Title"] = "Carrito";
+    ViewData["Title"] = "CARRITO";
     IEnumerable<bazar_prg.Models.Proforma> listItemsCarrito = new List<Proforma>();
     listItemsCarrito = @Model.elementosCarrito;
     Decimal montoTotal = @Model.montoTotal;
 }
 
 <h1>@ViewData["Title"]</h1>
+<br>
+<a class="btn btn-info" asp-controller="Pago" 
+        asp-action="Create" asp-route-monto="@montoTotal">PAGAR</a>
 
-<a class="btn btn-primary" asp-controller="Pago" 
-        asp-action="Create" asp-route-monto="@montoTotal">Pagar</a><p>Total S/. @montoTotal</p>
-
-<table class="table">
+</div>
+        
+<div style="text-align:center;">
+<table class="table table-hover">
     <thead>
         <tr>
             <th>
@@ -41,10 +48,26 @@
                 @Html.DisplayFor(modelItem => item.Precio)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Edit" asp-route-id="@item.Id">EDITAR</a> |
+                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Delete" asp-route-id="@item.Id">ELIMINAR</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>
+<div style="text-align:center;">
+    <p><h1>Total S/.@montoTotal</h1></p></div>
+
+     <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
