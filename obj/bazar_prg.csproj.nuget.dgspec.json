@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\S13_BAZAR_29-10-22\\bazar_prg\\bazar_prg.csproj": {}
+    "C:\\Users\\HP\\bazar_prg_1\\bazar_prg\\bazar_prg.csproj": {}
   },
   "projects": {
-    "D:\\S13_BAZAR_29-10-22\\bazar_prg\\bazar_prg.csproj": {
+    "C:\\Users\\HP\\bazar_prg_1\\bazar_prg\\bazar_prg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S13_BAZAR_29-10-22\\bazar_prg\\bazar_prg.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\bazar_prg_1\\bazar_prg\\bazar_prg.csproj",
         "projectName": "bazar_prg",
-        "projectPath": "D:\\S13_BAZAR_29-10-22\\bazar_prg\\bazar_prg.csproj",
-        "packagesPath": "C:\\Users\\MARGARETH\\.nuget\\packages\\",
-        "outputPath": "D:\\S13_BAZAR_29-10-22\\bazar_prg\\obj\\",
+        "projectPath": "C:\\Users\\HP\\bazar_prg_1\\bazar_prg\\bazar_prg.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\bazar_prg_1\\bazar_prg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MARGARETH\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.7, )"
@@ -65,6 +69,14 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "RotativaHQ.AspNetCore": {
+              "target": "Package",
+              "version": "[1.2.1, )"
             }
           },
           "imports": [

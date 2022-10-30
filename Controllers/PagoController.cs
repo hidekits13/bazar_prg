@@ -11,7 +11,9 @@ using bazar_prg.Data;
 using bazar_prg.Models;
 using Microsoft.EntityFrameworkCore;
 
-
+using OfficeOpenXml;
+using OfficeOpenXml.Table;
+using Rotativa.AspNetCore;
 namespace bazar_prg.Controllers
 {
 
@@ -83,13 +85,34 @@ public class PagoController : Controller{
 
         public IActionResult Index()
         {
-            return View();
+            return View(_context.DataPago.ToList());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View("Error!");
+        }
+        public IActionResult ExportarExcel()
+        {
+            string excelContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+            var pagos = _context.DataPago.AsNoTracking().ToList();
+            using (var libro = new ExcelPackage())
+            {
+                var worksheet = libro.Workbook.Worksheets.Add("Pagos");
+                worksheet.Cells["A1"].LoadFromCollection(pagos, PrintHeaders: true);
+                for (var col = 1; col < pagos.Count + 1; col++)
+                {
+                    worksheet.Column(col).AutoFit();
+                }
+                // Agregar formato de tabla
+                var tabla = worksheet.Tables.Add(new ExcelAddressBase(fromRow: 1, fromCol: 1, toRow: pagos.Count + 1, toColumn: 2), "Pagos");
+                tabla.ShowHeader = true;
+                tabla.TableStyle = TableStyles.Light6;
+                tabla.ShowTotal = true;
+
+                return File(libro.GetAsByteArray(), excelContentType, "Pagos.xlsx");
+            }
         }
         }
 }
