@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using bazar_prg.Data;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 
+using bazar_prg.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +17,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+
+
+//Registro mi logica customizada y reuzable
+builder.Services.AddScoped<ProductoService, ProductoService>();
 
 var app = builder.Build();
 
