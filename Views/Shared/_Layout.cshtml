@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - bazar_prg</title>
+    <title>@ViewData["Title"] - BAZAR PRG</title>
       <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     
     <link rel="stylesheet" href="~/css/Contactanos.css" asp-append-version="true" />
@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a style="margin-bottom: 18px;" class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">bazar_prg</a>
+                <a style="margin-bottom: 18px;" class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BAZAR PRG</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,16 +59,28 @@
             </div>
         </nav>
     </header>
-    
+
+    <div class="container" style="margin-bottom: 150px;">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-  
+  </div>
 
     <footer class="border-top footer text-muted">
+        <center>
         <div class="container">
-            &copy; 2022 - bazar_prg - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - PRG BAZAR - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
+            <div class="col-md-3">
+                <a></a>
+                <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/IEPRG" role="button">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="25px" heigh="25px"></i> Facebook</a>
+                <a class="btn btn-light" style="background-color: white; color:black;" href="https://www.instagram.com/prgoficial/" role="button">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="25px" heigh="25px"></i> Instagram</a>
+            </div>
+        </div>
+        </center>
+        </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

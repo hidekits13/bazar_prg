@@ -1,13 +1,16 @@
-@model IEnumerable<bazar_prg.Models.Productos>
 
+@model IEnumerable<bazar_prg.Models.Productos>
+<link rel="stylesheet" href="~/css/proforma.css" asp-append-version="true" />
+
+<link rel="stylesheet" href="~/css/burbuja.css" asp-append-version="true" />
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Panel Productos";
 }
 
-<h1>Index</h1>
+<h1>Registro de Inventario</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Create">Crear Nuevo Producto</a>
 </p>
 <table class="table">
     <thead>
@@ -55,9 +58,9 @@
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
