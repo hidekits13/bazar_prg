@@ -1,6 +1,6 @@
 
 @model bazar_prg.Models.Productos
-
+<link rel="stylesheet" href="~/css/createprod.css">
 @{
     ViewData["Title"] = "Edit";
 }
@@ -10,7 +10,8 @@
 <h4>Productos</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="contact-box">
+        <div class="left"></div>
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
@@ -36,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="ImageName" class="control-label"></label>
-                <input asp-for="ImageName" class="form-control" />
+                <input asp-for="ImageName" type="file" class="form-control" />
                 <span asp-validation-for="ImageName" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -44,17 +45,23 @@
                 <input asp-for="Status" class="form-control" />
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
+            <br>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
+<center>
+    <br>
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-primary" style="background-color: #3b5998;" asp-action="Index" role="button">
+                <img src="https://cdn-icons-png.flaticon.com/512/570/570220.png" width="25px" heigh="25px"></i> Regresar</a>
 </div>
-
+</center>
+<br>
+<br>
+<br>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

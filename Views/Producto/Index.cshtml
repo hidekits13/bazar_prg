@@ -1,8 +1,6 @@
 
 @model IEnumerable<bazar_prg.Models.Productos>
-<link rel="stylesheet" href="~/css/proforma.css" asp-append-version="true" />
 
-<link rel="stylesheet" href="~/css/burbuja.css" asp-append-version="true" />
 @{
     ViewData["Title"] = "Panel Productos";
 }
@@ -10,28 +8,29 @@
 <h1>Registro de Inventario</h1>
 
 <p>
-    <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Create">Crear Nuevo Producto</a>
+     <a class="btn btn-primary" style="background-color: #3b5998;" asp-action="Create" role="button">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828753.png" width="25px" heigh="25px"></i> Crear Nuevo Producto</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Nombre Producto
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Marca)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Descripcion)
+                Descripción
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Precio)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ImageName)
+                Imagen 
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Status)
+                Estado
             </th>
             <th></th>
         </tr>
@@ -58,11 +57,16 @@
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Edit" asp-route-id="@item.Id">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828742.png" width="15px" heigh="20px"> Editar</a> 
+                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Details" asp-route-id="@item.Id">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3388/3388904.png" width="15px" heigh="20px"> Detalle</a> 
+                <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Delete" asp-route-id="@item.Id">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2891/2891824.png" width="15px" heigh="20px"> Eliminar</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+<br>
+<br>

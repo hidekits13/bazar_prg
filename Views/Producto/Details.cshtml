@@ -1,54 +1,55 @@
 @model bazar_prg.Models.Productos
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles del Producto";
 }
 
-<h1>Details</h1>
+     <link rel="stylesheet" href="/css/detalleprod.css" asp-append-version="true" />
+     
 
-<div>
-    <h4>Productos</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Marca)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Marca)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Descripcion)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Descripcion)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Precio)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Precio)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImageName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<html lang="en">
+
+<head>
+  <title>Harvest vase</title>
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+  <div class="wrapper">
+    <div class="product-img">
+      
+      <img class="img-responsive" height="420" width="327"
+                       src="/images/@Html.DisplayFor(model => model.ImageName)" alt="@Html.DisplayFor(model => model.ImageName)"  />
+
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <br>
+        
+        <h1>@Html.DisplayFor(model => model.Name)</h1>
+        <h2>@Html.DisplayFor(model => model.Status)</h2>
+         <h2>@Html.DisplayFor(model => model.Marca)</h2>
+        
+        <h2>@Html.DisplayFor(model => model.Descripcion)</h2>
+        
+         <p><span>S/. <span>@Html.DisplayFor(model => model.Precio)</span></p>
+      </div>
+
+      </div>
+    </div>
+        <div>
+        
+            <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Edit" asp-route-id="@Model?.Id">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828742.png" width="15px" heigh="20px"> Edit</a> |
+            <a class="btn btn-primary" style="background-color: #3b5998;" asp-action="Index" role="button">
+                    <img src="https://cdn-icons-png.flaticon.com/512/570/570220.png" width="15px" heigh="20px"></i> Regresar</a>
+        </div>
+        <br>
+        <br>
+  </div>
+
+</body>
+
+
