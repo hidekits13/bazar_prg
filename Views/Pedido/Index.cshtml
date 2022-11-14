@@ -1,0 +1,55 @@
+@model IEnumerable<prueba06092022.Models.Pedido>
+
+@{
+    ViewData["Title"] = "Index";
+    var count = 1;
+}
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">
+                        №
+             </th>
+             <th scope="col">
+              CORREO DE CLIENTE
+             </th>
+             <th scope="col">
+TOTAL
+             </th>
+
+              <th scope="col">
+ESTADO DE PEDIDO
+              </th>
+              
+              <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           <th scope="row">
+                    @count
+            </th>
+            <td>
+                 @Html.DisplayFor(modelItem => item.UserID)
+            </td>
+            <td>
+               @Html.DisplayFor(modelItem => item.Total)
+            </td>                
+            <td>
+                  @Html.DisplayFor(modelItem => item.Status)
+                </td>
+            <td>   
+
+        <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> 
+
+            </td>
+        </tr>
+        count++;
+}
+    </tbody>
+</table>
+<div class="container">        
+    <a asp-action="ExportarExcel">GENERAR REPORTE EXCEL</a>
+</div>

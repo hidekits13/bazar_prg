@@ -1,0 +1,46 @@
+@model prueba06092022.Models.Pedido
+
+@{
+    ViewData["Title"] = "EDITAR";
+}
+
+<h1>EDITAR</h1>
+
+<h4>PEDIDO</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <input type="hidden" asp-for="Total" />
+            <input type="hidden" asp-for="pago" />
+            <input type="hidden" asp-for="UserID" />
+
+
+            <div class="form-group">
+                <label class="control-label">ESTADO DEL PEDIDO</label>
+                
+                 <select asp-for="Status" class="form-control">
+                 <option value="PENDIENTE">PENDIENTE</option>
+                 <option value="ALISTADO" >ALISTADO</option>
+                 <option value="ENTREGADO">ENTREGADO</option>
+                 </select>
+               
+                <span aspvalidation-for="Status" class="text-danger"></span>-
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="GUARDAR CAMBIO" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">RETROCEDER</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
