@@ -1,4 +1,4 @@
-@model IEnumerable<prueba06092022.Models.Pedido>
+@model IEnumerable<bazar_prg.Models.Pedido>
 
 @{
     ViewData["Title"] = "Index";
@@ -6,6 +6,8 @@
 }
 
 <table class="table table-hover">
+    
+    <a asp-action="ExportarExcel">GENERAR REPORTE EXCEL</a>
     <thead class="thead-dark">
         <tr>
             <th scope="col">

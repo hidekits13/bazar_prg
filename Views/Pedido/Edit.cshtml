@@ -1,12 +1,11 @@
-@model prueba06092022.Models.Pedido
+@model bazar_prg.Models.Pedido
 
 @{
     ViewData["Title"] = "EDITAR";
 }
 
-<h1>EDITAR</h1>
+<h1>EDITAR PEDIDO</h1>
 
-<h4>PEDIDO</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -27,18 +26,20 @@
                  <option value="ENTREGADO">ENTREGADO</option>
                  </select>
                
-                <span aspvalidation-for="Status" class="text-danger"></span>-
+                <span aspvalidation-for="Status" class="text-danger"></span>
             </div>
+            <br> 
 
             <div class="form-group">
                 <input type="submit" value="GUARDAR CAMBIO" class="btn btn-primary" />
             </div>
         </form>
     </div>
+      <a asp-action="Index">RETROCEDER</a>
 </div>
 
 <div>
-    <a asp-action="Index">RETROCEDER</a>
+  
 </div>
 
 @section Scripts {
