@@ -1,9 +1,16 @@
 
+<<<<<<< HEAD
 
 .container{
 	position: relative;
 	width: 100%;
 	height: 100%;
+=======
+.container{
+	position: relative;
+	width: 100%;
+	height: 70%;
+>>>>>>> 1de876d5cffb994307ad68b8b933ee81b719c129
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,13 +24,21 @@
 	height: 100%;
 	left: 0;
 	top: 0;
+<<<<<<< HEAD
 	background: url("img/bg.jpg") no-repeat center;
+=======
+	background: url("~/images/logoprg.png") no-repeat center;
+>>>>>>> 1de876d5cffb994307ad68b8b933ee81b719c129
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
 }
 .contact-box{
+<<<<<<< HEAD
 	max-width: 850px;
+=======
+	max-width: 700px;
+>>>>>>> 1de876d5cffb994307ad68b8b933ee81b719c129
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
@@ -43,6 +58,7 @@
 	padding: 25px 40px;
 }
 
+<<<<<<< HEAD
 h2{
 	position: relative;
 	padding: 0 0 10px;
@@ -60,6 +76,8 @@ h2:after{
     border-radius: 2px;
     background-color: #2ecc71;
 }
+=======
+>>>>>>> 1de876d5cffb994307ad68b8b933ee81b719c129
 
 .field{
 	width: 100%;
