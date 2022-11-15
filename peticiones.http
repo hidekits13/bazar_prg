@@ -1,7 +1,7 @@
 GET https://localhost:7243/api/producto HTTP/1.1
 Accept: application/json
 
-GET https://localhost:7243/api/producto/12 HTTP/1.1
+GET https://localhost:7243/api/producto/15 HTTP/1.1
 Accept: application/json
 
 POST https://localhost:7243/api/productoref HTTP/1.1
@@ -9,9 +9,9 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "Name": "Tajadores",
+  "Name": "Libros de colores",
   "Marca": "Artesco",
-  "Descripcion": "Muy bueno",
+  "Descripcion": "Hojas resistentes",
   "Precio": 2.50,
   "ImageName": "marcador.jpg",
   "Status": "Active"

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using bazar_prg.Data;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
+using bazar_prg.Integration.Sengrid;
 
 using bazar_prg.Services;
 
@@ -22,6 +23,7 @@ builder.Services.AddControllersWithViews();
 
 //Registro mi logica customizada y reuzable
 builder.Services.AddScoped<ProductoService, ProductoService>();
+builder.Services.AddSingleton<SendMailIntegration>();
 
 var app = builder.Build();
 
