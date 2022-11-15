@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using bazar_prg.Data;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
+using bazar_prg.Integration.Sengrid;
+
+using bazar_prg.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +18,12 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+
+
+//Registro mi logica customizada y reuzable
+builder.Services.AddScoped<ProductoService, ProductoService>();
+builder.Services.AddSingleton<SendMailIntegration>();
 
 var app = builder.Build();
 

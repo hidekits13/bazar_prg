@@ -1,0 +1,73 @@
+GET https://localhost:7243/api/producto HTTP/1.1
+Accept: application/json
+
+GET https://localhost:7243/api/producto/15 HTTP/1.1
+Accept: application/json
+
+POST https://localhost:7243/api/productoref HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "Name": "Libros de colores",
+  "Marca": "Artesco",
+  "Descripcion": "Hojas resistentes",
+  "Precio": 2.50,
+  "ImageName": "marcador.jpg",
+  "Status": "Active"
+}
+
+
+GET https://gorest.co.in/public/v2/users HTTP/1.1
+
+POST https://gorest.co.in/public/v2/users HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer cbcc8a78fc4628d3817795de40fe546fb8240f48cc6b835403077ca6d261c043
+
+{"name":"Tenali Ramakrishna", "gender":"male", "email":"fduartej@15ce.com", "status":"active"}
+
+
+GET http://lcalhost:50001/catstore/alumno/001
+
+{
+  "apellido": "Carpio",
+  "nombre": "Jose",
+  "edad": 18,
+  "telefonos": [
+    {
+      "numero": 5198888888,
+      "operador": "claro"
+    },
+    {
+      "numero": 51988888856,
+      "operador": "movistar"
+    }
+  ]
+}
+
+
+GET /alumno/100
+
+POST /alumno
+{
+  "apellido": "Carpio",
+  "nombre": "Jose",
+  "edad": 18,
+  "telefonos": [
+    {
+      "numero": 5198888888,
+      "operador": "claro"
+    },
+    {
+      "numero": 51988888856,
+      "operador": "movistar"
+    }
+  ]
+}
+
+PUT /alumno/100
+{
+  "apellido": "Talavera"
+ 
+}
