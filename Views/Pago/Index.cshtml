@@ -4,6 +4,10 @@
     ViewData["Title"] = "Index";
     var count = 1;
 }
+<div class="container">        
+    <a class="btn btn-primary" style="background-color: #3b5998;"asp-action="ExportarExcel" role="button">
+                <img src="https://cdn-icons-png.flaticon.com/512/2921/2921797.png" width="25px" heigh="25px"></i> GENERAR REPORTE EXCEL</a>
+</div>
 
 <table class="table table-hover">
     <thead class="thead-dark">
@@ -12,10 +16,10 @@
                         №
              </th>
              <th scope="col">
-                 @Html.DisplayNameFor(model => model.UserID)
+                Correo Cliente
              </th>
              <th scope="col">
-                  @Html.DisplayNameFor(model => model.PaymentDate)
+                  Fecha de Pago
              </th>
                     
               <th scope="col">
@@ -49,6 +53,5 @@
 }
     </tbody>
 </table>
-<div class="container">        
-    <a asp-action="ExportarExcel">GENERAR REPORTE EXCEL</a>
-</div>
+<br>
+<br>

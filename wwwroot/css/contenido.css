@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,900');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #F0F5F8;
+}
+
+.photo{
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background: url('https://images.pexels.com/photos/14392083/pexels-photo-14392083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.eff{
+  position: relative;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eff h4{
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #F0F5F8;
+  margin: 0;
+  position: relative;
+  z-index: 999;
+}
+
+.eff p{
+  width: 60%;
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 150%;
+  color: #F0F5F8;
+  position: relative;
+  z-index: 999;
+}
+
+.typed{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.content{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #F0F5F8;
+}
+
+.content:after{
+  content: '';
+  width: 100%;
+  height: 185px;/*125*/
+  position: absolute;
+  top: -94px;/*-62*/
+  right: 0;
+  background-color: #F0F5F8;
+  transform: skewY(-5.5deg);/*8*/
+}
+
+.title{
+  position: relative;
+  z-index: 999;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  background-color: #F0F5F8;
+  margin-top: 20px;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ic{
+  font-size: 80px;
+  transition: all 450ms ease;
+  padding: 0;
+  margin: 0;
+}
+
+.ic:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.title h4{
+  color: #4D6A71;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.title p{
+  width: 60%;
+  margin: 0 auto;
+  color: #98AAAF;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 650px){
+  .title p{
+    width: 80%;
+    font-size: 22px;
+  }
+  .title h4{
+    font-size: 30px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/e/s/est-marcadores-pitt-studio-box-48un-21841-default-1.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/e/s/estuche-de-marcadores-x-36un-supreme-brush-artline-48037-default-1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/m/a/marcador-pintor-punta-b-x6-pastel-pilot-60868-default-1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/c/a/caja-caballete-de-madera-40x30x14-cm-21305-default-1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+  background: url("https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/s/e/set-marcadores-doble-punta-x-72-staedtler-46739-default-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+  background: url("https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/c/o/color-x-36-polycolor-kohinoor-53355-default-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.section-products #product-7 .part-1::before {
+  background: url("https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/c/o/color-x-36-acuarelable-albrecht-durer-12270-default-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.section-products #product-8 .part-1::before {
+  background: url("https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/s/e/set-12-lapices-borradortajador-tombow-51-28995-default-1.jpg") no-repeat center;
+  background-size: cover;
+}
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
