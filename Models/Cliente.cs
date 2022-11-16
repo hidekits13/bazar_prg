@@ -24,6 +24,11 @@ namespace bazar_prg.Models
 
         [Column("email")]
         public string? Email {get; set; } 
+
+
+        [Column("estado")]
+        public string? Estado {get; set; } 
+
         
     }
 }
