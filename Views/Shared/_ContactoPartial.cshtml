@@ -1,0 +1,24 @@
+@using Microsoft.AspNetCore.Identity
+@using System.Collections.Generic;
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    IdentityUser myidentity = await Task.Run(() => UserManager.GetUserAsync(User));
+    var roles = await Task.Run(() => UserManager.GetRolesAsync(myidentity));
+   @if(roles.Contains("Admin") ){    
+          
+           <li class="nav-item">
+            <a style="padding-top: 35px;" class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="Index">Interesados</a>
+          </li>
+        
+    
+    }else{
+         <li class="nav-item">
+            <a style="padding-top: 35px;" class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="Index"></a>
+          </li>
+    }
+
+} 

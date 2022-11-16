@@ -1,0 +1,44 @@
+@using Microsoft.AspNetCore.Identity
+@using System.Collections.Generic;
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+      <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="~/css/Contactanos.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+  
+    
+        <link rel="stylesheet" href="~/css/botones.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/bazar_prg.styles.css" asp-append-version="true" />
+      
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+       
+
+<!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+
+@if (SignInManager.IsSignedIn(User))
+{
+    IdentityUser myidentity = await Task.Run(() => UserManager.GetUserAsync(User));
+    var roles = await Task.Run(() => UserManager.GetRolesAsync(myidentity));
+   @if(roles.Contains("Admin") ){    
+
+      
+        <li style="margin-top:27px;" class="nav-item">
+            <a class="nav-link text-dark bi bi-cart" asp-area="" asp-controller="Pedido" asp-action="Index"></a>
+        </li> 
+        
+    }else{
+    <li class="nav-item">
+        <form asp-controller="Proforma" asp-action="Index">
+                <input type="submit" value="Carrito" />
+        </form>
+    </li>
+    }
+
+} 
