@@ -8,145 +8,145 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = bazar_prg
 build_property.RootNamespace = bazar_prg
-build_property.ProjectDir = D:\SEMANA 16- BAZAR\bazar_prg\
+build_property.ProjectDir = C:\Users\USER\Downloads\PRG_BAZAR\bazar_prg\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\SEMANA 16- BAZAR\bazar_prg
+build_property.MSBuildProjectDirectory = C:\Users\USER\Downloads\PRG_BAZAR\bazar_prg
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Catalogo/Details.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Catalogo/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ29cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Catalogo/Index.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Catalogo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ29cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Cliente/Edit.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Cliente/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Cliente/Index.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Cliente/Listado.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Cliente/Listado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxMaXN0YWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Home/Home.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Home/Index.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Home/Privacy.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Pago/Create.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Pago/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Pago/Index.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Pago/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Pedido/Edit.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Pedido/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Pedido/Index.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Pedido/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Producto/Create.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Producto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Producto/Delete.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Producto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Producto/Details.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Producto/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Producto/Edit.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Producto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Producto/Index.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Proforma/Edit.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Proforma/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Proforma/Index.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Proforma/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZm9ybWFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Shared/Error.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Shared/_ContactoPartial.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Shared/_ContactoPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250YWN0b1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Shared/_MenuPartial.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Shared/_MenuPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Shared/_RolesPartial.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Shared/_RolesPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Sb2xlc1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/_ViewImports.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/_ViewStart.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SEMANA 16- BAZAR/bazar_prg/Views/Shared/_Layout.cshtml]
+[C:/Users/USER/Downloads/PRG_BAZAR/bazar_prg/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pj53xsqwxo
