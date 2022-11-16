@@ -57,7 +57,16 @@ namespace bazar_prg.Controllers
         }
 
        
-    
+         public IActionResult Listado()
+        {
+            return View(_context.DataCliente.ToList());
+        }
+
+
+
+
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
