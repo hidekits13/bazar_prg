@@ -119,7 +119,7 @@ namespace bazar_prg.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int Id, [Bind("Id,Name,Surname,Estado")] Cliente cliente)
+        public async Task<IActionResult> Edit(int Id, [Bind("Id,Name,Surname,Email,Estado")] Cliente cliente)
         {
             if (Id != cliente.Id)
             {
