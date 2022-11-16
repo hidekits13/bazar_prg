@@ -16438,6 +16438,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\SEMANA 16- BAZAR\\bazar_prg\\Views\\Cliente\\Edit.cshtml",
+      "TargetPath": "Views\\Cliente\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\SEMANA 16- BAZAR\\bazar_prg\\Views\\Shared\\_RolesPartial.cshtml",
       "TargetPath": "Views\\Shared\\_RolesPartial.cshtml",
       "FileKind": "mvc"

@@ -40,7 +40,7 @@ namespace bazar_prg.Controllers
         }
 
 
-public IActionResult ExportarExcel() 
+     public IActionResult ExportarExcel() 
         {
             string excelContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
             var pedidos = _context.DataPedido.AsNoTracking().ToList();

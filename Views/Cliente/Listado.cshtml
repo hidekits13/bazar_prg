@@ -23,7 +23,10 @@
               <th scope="col">
           CORRREO
              </th>
-              
+              <th scope="col">
+          ESTADO
+             </th>
+             
               <th></th>
         </tr>
     </thead>
@@ -36,13 +39,21 @@
             
             <td>
                @Html.DisplayFor(modelItem => item.Name)
-            </td>                
+            </td> 
+
             <td>
                   @Html.DisplayFor(modelItem => item.Surname)
            </td>
+
             <td>
                   @Html.DisplayFor(modelItem => item.Email)
            </td>
+          
+          
+            <td>
+                  @Html.DisplayFor(modelItem => item.Estado)
+           </td>
+
 
             <td>
 
