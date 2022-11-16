@@ -1,0 +1,43 @@
+@model dynamic;
+@using System.Collections.Generic;
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "MIS PEDIDOS";  
+    IEnumerable<bazar_prg.Models.Pedido> listItemsMatricula = new List<Pedido>();
+    listItemsMatricula = @Model.elementosDatos;
+}
+<h1>@ViewData["Title"]</h1>
+
+  <div class="container">
+    <h1>@ViewData["Message"]</h1>
+    <div class="row">
+      <div class="col">
+        <div id="products" class="mb-3">
+          <div class="row">
+            @foreach (Pedido item in Model.elementosDatos) {
+            <div class="col-sm-4">
+              <div class="card mb-3">
+                   
+                
+               
+                <div class="card-body">
+                
+                  
+                  <p class="card-text" style="font-size: 24px ; color: black">N° PEDIDO: @Html.DisplayFor(modelItem => item.ID )</p>
+                  <p class="card-text" style="font-size: 24px; color: black">Total: @Html.DisplayFor(modelItem => item.Total)</p>
+                  <h4 class="card-title" style=" color: black"> Estado de Pedido: @Html.DisplayFor(modelItem => item.Status)</h4>
+                 
+
+                </div>
+                <br>
+              </div>
+            </div>
+            }
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>

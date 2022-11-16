@@ -21,6 +21,11 @@
         <li style="margin-top:27px;" class="nav-item">
             <a class="nav-link text-dark bi bi-cart" asp-area="" asp-controller="Pedido" asp-action="Index">Pedidos</a>
         </li>
-    }
+    
+    }else{
+       <li style="margin-top:27px;" class="nav-item">
+            <a class="nav-link text-dark bi bi-cart" asp-area="" asp-controller="VistaCliente" asp-action="VistaCliente">Mis Pedidos</a>
+        </li>
+ }
 
 } 
