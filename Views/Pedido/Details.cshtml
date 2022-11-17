@@ -1,0 +1,37 @@
+@model bazar_prg.Models.Productos
+
+@{
+    ViewData["Title"] = "Detalles del Producto del cliente";
+}
+
+       <link rel="stylesheet" href="/css/detalleprod.css" asp-append-version="true" />  
+
+<html lang="en">
+
+<head>
+  <title>Harvest vase</title>
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+</head>
+
+<body>
+    
+  
+     <div class="col-md-4">
+       <div class="product-info">
+        <div class="product-text">
+        <br>
+    
+    	
+          <h2>@Html.DisplayFor(model =>  model.Name)</h2>
+
+         <h2>@Html.DisplayFor(model => model.Marca)</h2>
+        
+          <h2>@Html.DisplayFor(model => model.Descripcion)</h2>
+          
+                          
+        </div>
+        <a asp-action="Index">RETROCEDER</a>
+    </div>
+
+
+</body>

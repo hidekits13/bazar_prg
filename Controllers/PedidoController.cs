@@ -39,6 +39,25 @@ namespace bazar_prg.Controllers
             return View(_context.DataPedido.ToList());
         }
 
+           // GET: Pedido/Details/5
+        public async Task<IActionResult> Details(int? Id)
+        {
+            if (Id == null || _context.DataProducto == null)
+            {
+                return NotFound();
+            }
+
+            var productos = await _context.DataProducto
+                .FirstOrDefaultAsync(m => m.Id == Id);
+            if (productos == null)
+            {
+                return NotFound();
+            }
+
+            return View(productos);
+        }
+
+        
 
      public IActionResult ExportarExcel() 
         {
