@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Downloads\\PRG_BAZAR\\bazar_prg\\bazar_prg.csproj": {}
+    "E:\\PRG_FINAL\\bazar_prg\\bazar_prg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Downloads\\PRG_BAZAR\\bazar_prg\\bazar_prg.csproj": {
+    "E:\\PRG_FINAL\\bazar_prg\\bazar_prg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Downloads\\PRG_BAZAR\\bazar_prg\\bazar_prg.csproj",
+        "projectUniqueName": "E:\\PRG_FINAL\\bazar_prg\\bazar_prg.csproj",
         "projectName": "bazar_prg",
-        "projectPath": "C:\\Users\\USER\\Downloads\\PRG_BAZAR\\bazar_prg\\bazar_prg.csproj",
+        "projectPath": "E:\\PRG_FINAL\\bazar_prg\\bazar_prg.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Downloads\\PRG_BAZAR\\bazar_prg\\obj\\",
+        "outputPath": "E:\\PRG_FINAL\\bazar_prg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"

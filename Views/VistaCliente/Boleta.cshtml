@@ -10,6 +10,7 @@
 
 }
 <h1>Detalle del Pedido</h1>
+
 @foreach(DetallePedido item in Model.elementosCarrito) {
 
     if(yer<1){
@@ -65,3 +66,10 @@
         }
     </tbody>
 </table>
+<br>
+<center>
+<a class="btn btn-primary" style="background-color: #3b5998;"  asp-controller="VistaCliente" asp-action="VistaCliente" role="button">
+                <img src="https://cdn-icons-png.flaticon.com/512/570/570220.png" width="25px" heigh="25px"></i> Regresar</a>
+                </center>
+                <br>
+                <br>
