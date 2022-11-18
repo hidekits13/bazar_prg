@@ -33,10 +33,12 @@
     </div>
         <div>
         
-            <a class="btn btn-info btn glyphicon glyphicon-pencil" asp-action="Delete" asp-route-id="@Model?.Id">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2891/2891824.png" width="15px" heigh="20px"> Eliminar</a> |
-            <a class="btn btn-primary" style="background-color: #3b5998;" asp-action="Index" role="button">
+             <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+         <a class="btn btn-primary" style="background-color: #3b5998;" asp-action="Index" role="button">
                     <img src="https://cdn-icons-png.flaticon.com/512/570/570220.png" width="15px" heigh="20px"></i> Regresar</a>
+    </form>
         </div>
 
   </div>
