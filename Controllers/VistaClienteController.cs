@@ -45,6 +45,26 @@ namespace bazar_prg.Controllers
 
             return View(model);
         }
+
+         public async Task<IActionResult> Boleta(int? id){
+
+            Pedido objProduct = await _context.DataPedido.FindAsync(id);
+              DetallePedido objProduct1 = await _context.DataDetallePedido.FindAsync(objProduct.ID);
+
+
+            var items = from o in _context.DataDetallePedido select o;
+            items = items.Include(p => p.Producto).Include(p => p.pedido).Where(w => w.pedido.ID.Equals(objProduct.ID));
+
+
+            var carrito = await items.ToListAsync();
+            var total= carrito.Sum(c => c.Cantidad + c.Cantidad);
+
+            dynamic model = new ExpandoObject(); 
+            model.montoTotal = total;
+            model.elementosCarrito = carrito;
+
+            return View(model);
+        }
            
         public IActionResult Index()
         {

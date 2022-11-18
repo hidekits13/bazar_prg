@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Cn7OHKFKu4VnnMxXjF7AAFv4mJU/mQAGysrI0ML0R4uyV/zPBB+Y1+m9xOnx4fzBSyhrMUWg8SsJc4Kdn92xg==",
+  "dgSpecHash": "XXAzt9J80Gbiub6JQE+AL8KNxY8+v1RdsRwO5eyMZHzqP0a2dDh2HFa8VYflOZVH+ffqYIuqBVKFR/POw6HT1Q==",
   "success": true,
-  "projectFilePath": "D:\\SEMANA 16- BAZAR\\bazar_prg\\bazar_prg.csproj",
+  "projectFilePath": "C:\\Users\\MARGARETH\\Desktop\\F-PRUEBA-BAZAR\\bazar_prg\\bazar_prg.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MARGARETH\\.nuget\\packages\\anglesharp\\0.9.9\\anglesharp.0.9.9.nupkg.sha512",
     "C:\\Users\\MARGARETH\\.nuget\\packages\\epplus\\6.0.4\\epplus.6.0.4.nupkg.sha512",
