@@ -13,7 +13,7 @@
 @foreach(DetallePedido item in Model.elementosCarrito) {
 
     if(yer<1){
-    <h4>@Html.DisplayFor(modelItem => item.pedido)</h4>
+    <h4>@Html.DisplayFor(modelItem => item.pedido.UserID)</h4>
         yer++;
     }
 

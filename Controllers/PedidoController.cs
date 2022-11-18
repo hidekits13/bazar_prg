@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using bazar_prg.Data;
 using bazar_prg.Models;
 using Microsoft.EntityFrameworkCore;
-
+using System.Dynamic;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using OfficeOpenXml;
 using OfficeOpenXml.Table;
@@ -40,22 +40,26 @@ namespace bazar_prg.Controllers
         }
 
            // GET: Pedido/Details/5
-        public async Task<IActionResult> Details(int? Id)
-        {
-            if (Id == null || _context.DataProducto == null)
-            {
-                return NotFound();
-            }
+        public async Task<IActionResult> Details(int? id){
 
-            var productos = await _context.DataProducto
-                .FirstOrDefaultAsync(m => m.Id == Id);
-            if (productos == null)
-            {
-                return NotFound();
-            }
+            Pedido objProduct = await _context.DataPedido.FindAsync(id);
+              DetallePedido objProduct1 = await _context.DataDetallePedido.FindAsync(objProduct.ID);
 
-            return View(productos);
+
+            var items = from o in _context.DataDetallePedido select o;
+            items = items.Include(p => p.Producto).Include(p => p.pedido).Where(w => w.pedido.ID.Equals(objProduct.ID));
+
+
+            var carrito = await items.ToListAsync();
+            var total= carrito.Sum(c => c.Cantidad + c.Cantidad);
+
+            dynamic model = new ExpandoObject(); 
+            model.montoTotal = total;
+            model.elementosCarrito = carrito;
+
+            return View(model);
         }
+ 
 
         
 
